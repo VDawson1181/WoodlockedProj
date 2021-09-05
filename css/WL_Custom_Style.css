@@ -166,7 +166,7 @@ body {
 /* Carousel Styles */
 .WL_BlackBox {
   max-width: 1050px;
-  min-width: 305px;
+  min-width: 320px;
   margin: 175px auto 0px;
   background-color: black;
   border-radius: 25px 25px 0px 0px;
@@ -175,7 +175,7 @@ body {
 @media (max-width: 767px) {
   /* CSS goes here */
   .WL_BlackBox {
-    width: 305px;
+    width: 320px;
     margin: 135px auto 0px;
     background-color: rgba(0, 0, 0, 0.9);
   }
