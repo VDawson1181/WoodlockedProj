@@ -1,0 +1,80 @@
+#WLSplashPage{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#sp_leftSide,#sp_rightSide{
+    display: block;
+    width: 51vh;
+    height: 100vh;
+    position: relative;
+    /* overflow: hidden; */
+    cursor: pointer;
+    background: #000;
+}
+
+#sp_leftSide .bkgrndLayer{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 51vw;
+    height: 100vh;
+    background: #000 url(../images/WLC_Splash_LumberBkgrnd.png) center center no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    opacity: 0.11;
+
+    -moz-box-shadow:    inset 0 0 80px #000000;
+    -webkit-box-shadow: inset 0 0 80px #000000;
+    box-shadow:         inset 0 0 80px #000000;
+}
+#sp_rightSide .bkgrndLayer{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 50vw;    
+    height: 100vh;
+    background: #000 url(../images/WLC_Splash_ConstructionBkgrnd.png) center center no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    opacity: 0.14;
+
+    -moz-box-shadow:    inset 0 0 80px #000000;
+    -webkit-box-shadow: inset 0 0 80px #000000;
+    box-shadow:         inset 0 0 80px #000000;
+}
+
+#sp_leftSide .bkgrndLayer:hover, #sp_rightSide .bkgrndLayer:hover{
+    /* opacity: 0.5; */
+    filter: grayscale(0%);
+    opacity: 0.24;
+    transition: all 0.5s linear;
+}
+
+.row div h6{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    pointer-events: none;
+
+    width: 100%;    
+    height: 486px;
+    overflow: hidden;
+    text-indent: -1000px;
+    /* margin: 50px 0 70px 65px; */
+}
+
+#sp_leftSide h6 {
+    background:url(../images/WLC_Splash_lumberLogo.png) center center no-repeat;
+    background-size: contain;
+  }
+
+#sp_rightSide h6 {
+    background:url(../images/WLC_Splash_ConstructionLogo.png) center center no-repeat;
+    background-size: contain;
+  }
