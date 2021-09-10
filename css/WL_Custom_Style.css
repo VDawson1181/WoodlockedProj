@@ -11,11 +11,18 @@ body {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+.navbar {
+  padding: 0rem 3rem;
+}
+
 @media (max-width: 767px) {
   /* CSS goes here */
   #WL_navbarContainer {
     background-color: black;
     border-bottom: 2px solid #b86936;
+  }
+  .navbar {
+    padding: 0rem 1rem;
   }
 }
 
@@ -26,36 +33,27 @@ body {
 }
 
 .navbar-brand {
-  /* background: rgba(0, 0, 0, 0.9);
-    padding: 10px; */
-  /* filter: drop-shadow(0px 0px 3px rgba(184, 105, 54, 0.7)); */
-  -webkit-filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.7));
-          filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.7));
+  background: black;
+  /*padding: 10px; */
+  padding: 10px 20px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   color: white;
   text-transform: uppercase;
   position: relative;
 }
 
 .navbar-dark .navbar-nav .nav-item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   position: relative;
-}
-
-.nav-sep {
-  width: 1px;
-  height: 40px;
-  background: transparent url(../images/WLC_Nav_Sep.png) no-repeat center center;
-  background-size: contain;
-  position: absolute;
-  top: 0;
-  right: -1px;
+  top: 4px;
 }
 
 .navbar-dark .navbar-nav .nav-call {
+  position: relative;
+  top: 0px;
   font-family: 'Brygada 1918', serif;
   text-align: center;
   color: white;
@@ -70,7 +68,7 @@ body {
   letter-spacing: 0.1em;
   font-style: italic;
   font-weight: 600;
-  margin-bottom: 7px;
+  margin-bottom: 0px;
 }
 
 .navbar-dark .navbar-nav .nav-call h6 {
@@ -78,12 +76,24 @@ body {
   line-height: .75em;
   font-weight: 700;
   letter-spacing: 0.1em;
+  margin-bottom: 0px;
 }
 
 .navbar-dark .navbar-nav .nav-call h5 {
   font-size: 1em;
   line-height: .75em;
   font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.nav-sep {
+  width: 1px;
+  height: 40px;
+  background: transparent url(../images/WLC_Nav_Sep.png) no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  right: -1px;
 }
 
 /* Nav Styles */
@@ -165,9 +175,7 @@ body {
 
 /* Carousel Styles */
 .WL_BlackBox {
-  max-width: 1050px;
-  min-width: 320px;
-  margin: 175px auto 0px;
+  margin: 175px 100px 0px;
   background-color: black;
   border-radius: 25px 25px 0px 0px;
 }
@@ -175,8 +183,7 @@ body {
 @media (max-width: 767px) {
   /* CSS goes here */
   .WL_BlackBox {
-    width: 320px;
-    margin: 135px auto 0px;
+    margin: 135px 20px 0px;
     background-color: rgba(0, 0, 0, 0.9);
   }
 }
@@ -449,12 +456,19 @@ body {
 
 /*Gallery Styles*/
 .WL_Gallery {
-  background: transparent url(../images/WLC_Gal_Bkgrnd.png) no-repeat center center;
+  background: transparent url(../images/WLC_Gal_Bkgrnd.png) repeat 0 0;
   background-size: cover;
 }
 
 .navListing {
   position: relative;
+  padding: 0 10px;
+}
+
+@media (max-width: 767px) {
+  .navListing {
+    padding: 0;
+  }
 }
 
 .galContainerInner {
@@ -488,25 +502,47 @@ body {
 }
 
 .galContainerInner .WL_Hdr_Main {
-  font-size: 1.2em;
+  font-size: 2.1em;
   line-height: 1.2em;
+  text-decoration: none;
 }
 
 .galContainerInner .WL_Hdr_Main:hover {
   color: white;
+  text-decoration: underline;
 }
 
 .gal-sep {
   width: 1px;
-  height: 25px;
+  height: 30px;
   background-color: #fff;
   position: absolute;
-  bottom: 5px;
+  bottom: 14px;
   right: -8px;
+}
+
+@media (max-width: 767px) {
+  .gal-sep {
+    height: 15px;
+    bottom: 8px;
+    right: -8px;
+  }
 }
 
 #galleryContainer {
   min-height: calc(100vh - 300px);
+}
+
+.galleryImgContainer {
+  padding: 20px 0 75px;
+}
+
+.galleryImgContainer a {
+  border: 3px solid #fff;
+}
+
+.galleryImgContainer img {
+  width: 275px;
 }
 
 #galleryModalWindow {
@@ -535,7 +571,10 @@ body {
   margin: auto;
 }
 
-@media only screen and (min-width: 320px) {
+@media (max-width: 767px) {
+  .galleryImgContainer {
+    padding: 0px 0 20px;
+  }
   .galContainerInner {
     padding-top: 20px;
   }
@@ -545,29 +584,11 @@ body {
   #galleryModalWindow img {
     width: 320px;
   }
-}
-
-@media only screen and (min-width: 576px) {
-  .galContainerInner {
-    padding-top: 10px;
+  .galleryImgContainer a {
+    border: 1px solid #fff;
   }
-  .galContainerInner .WL_Hdr_Main {
-    font-size: 1em;
-  }
-  #galleryModalWindow img {
-    width: 440px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .galContainerInner {
-    padding-top: 0px;
-  }
-  .galContainerInner .WL_Hdr_Main {
-    font-size: 1.2em;
-  }
-  #galleryModalWindow img {
-    width: auto;
+  .galleryImgContainer img {
+    width: 120px;
   }
 }
 

@@ -45,6 +45,22 @@
     box-shadow:         inset 0 0 80px #000000;
 }
 
+@media (max-width: 767px) {
+    #sp_leftSide{
+        border-bottom: 2px solid #b86936;
+    }
+    #sp_leftSide,#sp_rightSide{
+        overflow: hidden;
+    }
+    #sp_leftSide,#sp_rightSide,#sp_leftSide .bkgrndLayer,#sp_rightSide .bkgrndLayer{
+        width: 100vw;
+        height: 51vh;
+    }
+    #sp_rightSide h6,#sp_leftSide h6{
+        width: 75%;
+    }
+}
+
 #sp_leftSide .bkgrndLayer:hover, #sp_rightSide .bkgrndLayer:hover{
     /* opacity: 0.5; */
     filter: grayscale(0%);
@@ -52,7 +68,7 @@
     transition: all 0.5s linear;
 }
 
-.row div h6{
+.WLSplashInner div h6{
     position: absolute;
     top: 0;
     bottom: 0;

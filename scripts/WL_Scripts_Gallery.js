@@ -62,19 +62,20 @@ function listener(index){
     //Generate and write new thumbnails...
     for(var WLGI=0;WLGI<imgNum;WLGI++){
         // console.log("Image #"+WLGI)
-        document.querySelector(".galleryImgContainer div").innerHTML += '<a title="'+imgTitle+' img #'+WLGI+'" href="#" class="WL_GAL_Tmb" data-TMB-name="'+imgLst+'" data-Tmb-num="'+WLGI+'"><img src="images/WL_IMGGAL_'+imgLst+'/thumbs/WLC_Gal_Tmb_'+imgLst+'_'+WLGI+'.png" width="200px" class="img-fluid d-block mx-auto" alt="WoodLocked Trust"></a>'; 
+        document.querySelector(".galleryImgContainer div").innerHTML += '<a title="'+imgTitle+' img #'+WLGI+'" href="#" class="WL_GAL_Tmb" data-TMB-name="'+imgLst+'" data-Tmb-num="'+WLGI+'"><img src="images/WL_IMGGAL_'+imgLst+'/thumbs/WLC_Gal_Tmb_'+imgLst+'_'+WLGI+'.png" class="img-fluid d-block mx-auto" alt="WoodLocked Trust"></a>'; 
     }
     showGalImage();
 }
 
 //Listener for the Gallery thumbnails... will open the appropriate Image.
-function showGalImage(){
+function showGalImage(catListing){
     let WL_Gal_Thumbnail_Links = document.querySelectorAll(".galleryImgContainer div .WL_GAL_Tmb");
         
     for(var WLGTNC=0;WLGTNC<WL_Gal_Thumbnail_Links.length;WLGTNC++){
         WL_Gal_Thumbnail_Links[WLGTNC].addEventListener('click', function actBtn(e){
             e.preventDefault();                               
             // console.log(WL_Gal_Links[WLGTNC].getAttribute('data-WL-Name'))
+            console.log(this.getAttribute("data-TMB-name")+"|"+this.getAttribute("data-TMB-num"))
             
             let WL_TMB_Category = this.getAttribute("data-TMB-name"),     
                 WL_TMB_Iteration = this.getAttribute("data-TMB-num"),
