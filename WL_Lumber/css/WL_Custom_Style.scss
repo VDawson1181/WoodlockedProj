@@ -135,7 +135,7 @@ body{
     line-height: 1.25em;
 
     position: absolute;
-    top: calc(100vh - 400px);
+    top: calc(100vh - 550px);
 }
 
 @media (max-width: 767px) {
@@ -440,6 +440,10 @@ body{
     background: transparent url(../images/WLC_Products_Bkgrnd.png) no-repeat center center;
     background-size: cover;   
 }
+.WL_Prod_Categories{
+    gap: 40px;
+    padding-bottom: 20px;
+}
 #WL_Product_Bdy .WL_FeatSubImg{
     margin-top: 20px;
     // height: 45px;
@@ -451,11 +455,11 @@ body{
 }
 #WL_Product_Bdy a{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     color: #b86937;
     // font-style: italic;
-    font-size: 1.5em;
-    line-height: 1.5em;
+    font-size: 1.1em;
+    line-height: 1.1em;
     margin-bottom: 0.25rem;
     // text-decoration: none;
 }
@@ -534,6 +538,7 @@ body{
 }
 
 .galContainerInner{
+    padding: 0 150px;
     gap: 15px;
 }
 .galContainerInner .WL_FeatSubImg{
@@ -599,11 +604,16 @@ body{
         bottom: 8px;
         right: -8px;
     }
+    .galContainerInner{
+        padding: 0;
+    }
 }
 
 #galleryContainer{
     min-height: calc(100vh - 300px);
+    padding-bottom: 55px;
 }
+
 .galleryImgContainer{
     padding: 20px 0 75px;
 }
@@ -611,7 +621,7 @@ body{
     border: 3px solid #fff;
 }
 .galleryImgContainer img{
-    width: 275px;    
+    width: 215px;    
 }
 
 // Gallery Modal Window Start
@@ -794,7 +804,7 @@ body{
 }
 #WL_Contact_Bdy .WL_Hdr_Main{    
     padding: 20px 0px 15px;
-    font-size: 2.5em;
+    font-size: 3.5em;
     line-height: 1em;
 }
 #WL_Contact_Bdy .HP_Feature_Text{

@@ -154,20 +154,33 @@ function showGalImage(){
                         document.querySelector('#galleryModalWindow .gal-Next').style.display = "block";
                     }
                     document.querySelector("#galleryModalWindow").style.display = "block";
+
+                    // document.onkeydown = function(event){
+                    //     console.log(event.code)
+                    //     // if (event.keyCode == 37 || event.which == 37){
+                    //     //     alert("You are clicked");
+                    //     // }
+                    // };
+                    // document.addEventListener("keydown",handleKeyDown, true);
                 }
             }
             
         });
     }
+
+
 }
+
+
 
 // Close the gallery
 document.querySelector(".gal-close").addEventListener('click', function actBtn(e){
     e.preventDefault();                                  
     console.log("Gallery closed"); 
     document.querySelector("#galleryModalWindow").style.display = "none";
-            
+    // document.removeEventListener("keydown",handleKeyDown, true);
 });
+
 // Next image in the gallery
 document.querySelector(".gal-Next").addEventListener('click', function actBtn(e){
     e.preventDefault();                                  
@@ -212,13 +225,17 @@ function galleryScroller(galInd){
 
                 if(parseInt(nextGalImgNum)==0){
                     document.querySelector('#galleryModalWindow .gal-Prev').style.display = "none";
+                    // document.removeEventListener("keydown",handleKeyDown, true);
                 }else{
                     document.querySelector('#galleryModalWindow .gal-Prev').style.display = "block";
+                    // document.addEventListener("keydown",handleKeyDown, true);
                 }
                 if(parseInt(nextGalImgNum)==parseInt(WL_Gallery_Setup[WLSI][2]-1)){                        
                     document.querySelector('#galleryModalWindow .gal-Next').style.display = "none";
+                    // document.removeEventListener("keydown",handleKeyDown, true);
                 }else{
                     document.querySelector('#galleryModalWindow .gal-Next').style.display = "block";
+                    // document.addEventListener("keydown",handleKeyDown, true);
                 }
                 document.querySelector("#galleryModalWindow").style.display = "block";
             }
@@ -229,6 +246,21 @@ function galleryScroller(galInd){
     // }
 }
 
+// function handleKeyDown(e){
+//     console.log(e.code);
+//     let WL_KeyPressCode = e.code;
+//     switch(WL_KeyPressCode.toString()){        
+//         case 'ArrowRight':
+//         default:
+//             console.log("Next Img");  
+//             galleryScroller("Nxt"); 
+//         break;                     
+//         case "ArrowLeft":
+//             console.log("Back 1");        
+//             galleryScroller("Pre"); 
+//         break;                                                                              
+//     }
+// }
 
 function imageExists(image_url){
 
