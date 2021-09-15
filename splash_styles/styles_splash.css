@@ -81,10 +81,24 @@
     background-size: contain;
   }
 
+#sp_centerLine{
+    width: 309px;
+    background: transparent url(../splash_images/WLC_Splash_CenterLine.png) center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 85;
+    pointer-events: none;
+}
+
 @media (max-width: 767px) {
-    #sp_leftSide{
+    /* #sp_leftSide{
         border-bottom: 2px solid #b86936;
-    }
+    } */
     #sp_leftSide,#sp_rightSide{
         overflow: hidden;
     }
@@ -96,10 +110,16 @@
         width: 75%;
     } */
     #sp_leftSide h6 {
-        background:url(../splash_images/WLC_Splash_lumberLogo_Mob.png) center center no-repeat;
+        background: transparent url(../splash_images/WLC_Splash_lumberLogo_Mob.png) center center no-repeat;
       }
     
     #sp_rightSide h6 {
-        background:url(../splash_images/WLC_Splash_ConstructionLogo_Mob.png) center center no-repeat;
+        background: transparent url(../splash_images/WLC_Splash_ConstructionLogo_Mob.png) center center no-repeat;
       }
+
+    #sp_centerLine{
+        height: 320px;
+        transform: rotate(90deg)
+    }
 }
+
