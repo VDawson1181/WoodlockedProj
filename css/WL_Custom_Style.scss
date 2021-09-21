@@ -142,9 +142,12 @@ body{
 @media (max-width: 767px) {
     .carousel-item p{
     /* CSS goes here */
-        font-size: 1em;
+        width: 100%;
+        font-size: 2em;
         line-height: 1em;
-        top: 250px;
+        padding: 10px 15px;
+        top: 275px;
+        text-align: center;
     }
 }
 // Lumber Carousel
