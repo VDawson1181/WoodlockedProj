@@ -8,7 +8,7 @@ if(isset($_POST['submit'])){
     $service_type = $_POST['WL_ProductLst'];
     $subject = "WoodLocked Lumber inquiry submission";
     $subject2 = "Copy of your form submission";
-    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['wl_message'];
+    $message = $first_name . " " . $last_name . " is inquiring about:" . $service_type . "Services... \n\n" . $_POST['wl_message'];
     $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['wl_message'];
 
     $headers = "From:" . $from;
