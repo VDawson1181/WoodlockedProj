@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,600;0,700;1,600;1,700&family=Great+Vibes&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/WL_Custom_Style.css">
+    <title>Woodlocked - Exotic Lumber Corp.</title>
+</head>
+<body class="WL_Contact">
+    <!-- https://www.youtube.com/watch?v=4sosXZsdy-s -->
+    <!-- https://getbootstrap.com/docs/5.1/customize/overview/ -->
+    <!-- Navbar -->
+    <section id="WL_navbarContainer">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+        </nav>
+    </section>
+    <!-- Navbar -->
+
+    <section id="WL_Contact_Content" class="WL_BlackBox">
+        <section id="WL_Contact_Bdy" class="text-light p-sm-3 text-center text-lrg-start">
+            <div class="container">
+                <div class="bdy_Hdr">
+                    <img src="images/WLC_Contact_CogLogo.png" width="60px" class="img-fluid d-block mx-auto" alt="Contact Form Cog">
+                    <p class="WL_Hdr_Main">We'd Love to hear from you.</p>
+                    <div class="col-md">
+                        <p class="HP_Feature_Text">Don’t see what you’re looking for? Have a question? Just want to chat? <br> Give us a call, or fill out the form and one of our reps will get back to you shortly.</p>                    
+                    </div>   
+                </div> 
+            </div>
+            <div class="container px-sm-5">
+                <div class="row gx-7 align-items-left text-left">
+                    <div class="wl_Contact_addWrap col-md d-flex flex-wrap">
+                        <div class="WL_FeatSubImg  d-none d-sm-block"></div>
+                        <div class="WL_Contact_Address">
+                            <h6>Office</h6>
+                            <h5>1016 Grand Blvd.</h5>
+                            <h5>Deer Park, NY 11729</h5>
+                            <h6>631.306.7700</h6>
+                            <span class="wl_Pg_Spacer"></span>
+                            <h6>General Inquiries</h6>
+                            <h5>info@woodlockedcorp.com</h5>
+                            <!-- <p class="HP_Feature_Text d-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum id provident corrupti ut labore numquam nemo nisi ducimus. Dolorem facilis numquam expedita quas facere quod eos placeat ipsa dicta minima?</p> -->
+                        </div>
+                        
+                    </div>
+                    <div class="wl_ContactForm_Wrap col-md">
+                        <form action="/scripts/mail_handler.php" method="get">
+                            <label for="WL_ProductLst">Services:</label>
+                            <select id="WL_ProductLst" name="WL_ProductLst" required>
+                              <option value="">--- Choose A Service ---</option>
+                              <option value="Tables">Tables</option>
+                              <option value="Lighting">Lighting</option>
+                              <option value="Furniture">Furniture</option>
+                              <option value="Mantles">Mantles</option>
+                              <option value="BarnDoors">BarnDoors</option>
+                              <option value="Wholesale">Wholesale</option>
+                            </select> 
+                            <label for="wl_fname">First Name:</label><br>
+                            <input type="text" id="wl_fname" name="wl_fname" required ><br><br>
+                            <label for="wl_lname">Last Name:</label><br>
+                            <input type="text" id="wl_lname" name="wl_lname" required ><br><br>
+                            <label for="wl_email">Email:</label><br>
+                            <input type="text" id="wl_email" name="wl_email" required ><br><br>
+                            <label for="wl_message">Message:</label><br>
+                            <textarea id="wl_message" name="wl_message" required></textarea><br><br>
+                            <input type="submit" class="wl_submit" name="wl_submit" value="Submit">
+                          </form> 
+                        <!-- <p class="HP_Feature_Text d-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum id provident corrupti ut labore numquam nemo nisi ducimus. Dolorem facilis numquam expedita quas facere quod eos placeat ipsa dicta minima?</p> -->
+                    </div>                   
+                </div>
+            </div>
+        </section>
+        <section id="WL_Contact_Ftr" class="text-light p-1 text-center text-lrg-start">
+            <!-- <div class="bdy_Ftr">
+                <p><span class="text-feature">"</span> We are committed to providing the best quality on <br> each of our products, no matter the size. <span class="text-feature">"</span></p>
+                <h6>Laurie Taylor</h6>
+                <h5>President, Woodlocked Corp.</h5>
+            </div>  -->
+        </section>
+    </section>
+
+    
+
+        <!-- Footer Navbar -->
+        <section id="WL_ftr_navbarContainer">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+
+            </nav>
+        </section>
+        <!-- Footer Navbar -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="scripts/WL_Lum_Navigation_Control.js"></script>
+</body>
+</html>
