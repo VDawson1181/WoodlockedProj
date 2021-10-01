@@ -338,6 +338,11 @@ body {
   line-height: 1rem;
 }
 
+#WL_AboutUs_Bdy .bdy_Hdr .WL_Hdr_SubMain {
+  font-size: 1.5em;
+  line-height: 2rem;
+}
+
 .HP_Feature_SubText {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -415,7 +420,6 @@ body {
 }
 
 .bdy_Ftr p span.text-feature:nth-of-type(2) {
-  right: -18px;
   top: 70px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
