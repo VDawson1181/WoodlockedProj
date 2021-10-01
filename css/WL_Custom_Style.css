@@ -262,6 +262,10 @@ body {
   height: 90px;
 }
 
+.WL_ConProd .wl-fx-img {
+  width: 405px !important;
+}
+
 /* Philosophy Hdr Styles */
 #WL_Philosophy_Hdr p {
   background-color: black;
