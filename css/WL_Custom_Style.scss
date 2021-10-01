@@ -264,10 +264,15 @@ body{
     margin-bottom: 0.25rem;
 }
 
-#WL_Product_Content .HP_Feature_Text{
+.WL_LumProd .WL_Prod_Categories .HP_Feature_Text{
     height: 90px;
 }
 
+.WL_ConProd .WL_Prod_Categories .HP_Feature_Text{
+    width: 405px;
+    height: 120px;
+    margin: 0 auto;
+}
 .WL_ConProd .wl-fx-img{
     width: 405px !important;
 }
