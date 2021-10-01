@@ -258,6 +258,10 @@ body {
   margin-bottom: 0.25rem;
 }
 
+#WL_Product_Content .HP_Feature_Text {
+  height: 90px;
+}
+
 /* Philosophy Hdr Styles */
 #WL_Philosophy_Hdr p {
   background-color: black;
