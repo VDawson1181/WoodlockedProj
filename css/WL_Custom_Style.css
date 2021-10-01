@@ -411,7 +411,7 @@ body {
 }
 
 .bdy_Ftr p span.text-feature:nth-of-type(2) {
-  right: 75px;
+  right: -18px;
   top: 70px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
