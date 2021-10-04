@@ -277,6 +277,21 @@ body{
     width: 405px !important;
 }
 
+@media (max-width: 767px) {
+    .WL_LumProd .WL_Prod_Categories .HP_Feature_Text{
+        height: 90px;
+    }
+
+    .WL_ConProd .WL_Prod_Categories .HP_Feature_Text{
+        width: 300px;
+        height: 120px;
+        margin: 0 auto;
+    }
+    .WL_ConProd .wl-fx-img{
+        width: 300px !important;
+    }
+}
+
 /* Philosophy Hdr Styles */
 #WL_Philosophy_Hdr p{
     background-color: rgba(0, 0, 0, 1);
@@ -679,7 +694,7 @@ body{
 
 
 .WL_Construction .galContainerInner .navListing:nth-of-type(1) .WL_FeatSubImg{
-    background: transparent url(../images/WL_IMGGAL__MenuLogos/WLC_Products_RoofingLogo.png) no-repeat center center;
+    background: transparent url(../images/WL_IMGGAL__MenuLogos/WLC_Products_DecksLogo.png) no-repeat center center;    
     background-size: contain;
     // background-size: 70%;   
 }
@@ -689,12 +704,12 @@ body{
     // background-size: 70%;   
 }
 .WL_Construction .galContainerInner .navListing:nth-of-type(3) .WL_FeatSubImg{
-    background: transparent url(../images/WL_IMGGAL__MenuLogos/WLC_Products_WindowsLogo.png) no-repeat center center;
+    background: transparent url(../images/WL_IMGGAL__MenuLogos/WLC_Products_MasonryLogo.png) no-repeat center center;    
     background-size: contain;
     // background-size: 70%;   
 }
 .WL_Construction .galContainerInner .navListing:nth-of-type(4) .WL_FeatSubImg{
-    background: transparent url(../images/WL_IMGGAL__MenuLogos/WLC_Products_DecksLogo.png) no-repeat center center;
+    background: transparent url(../images/WL_IMGGAL__MenuLogos/WLC_Products_RoofingLogo.png) no-repeat center center;
     background-size: contain;
     // background-size: 70%;   
 }
@@ -704,7 +719,7 @@ body{
     // background-size: 70%;   
 }
 .WL_Construction .galContainerInner .navListing:nth-of-type(6) .WL_FeatSubImg{
-    background: transparent url(../images/WL_IMGGAL__MenuLogos/WLC_Products_MasonryLogo.png) no-repeat center center;
+    background: transparent url(../images/WL_IMGGAL__MenuLogos/WLC_Products_WindowsLogo.png) no-repeat center center;
     background-size: contain;
     // background-size: 70%;   
 }
@@ -776,6 +791,7 @@ body{
 }
 
 #galleryModalWindow img{
+    max-width: 650px;
     position: absolute;
     top: 0;
     bottom: 0;

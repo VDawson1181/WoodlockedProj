@@ -1,11 +1,12 @@
 //Gallery Javascript
 var WL_Gallery_Setup = [
-    ['Roofing','RF',10],
+    ['Decks','DK',12],
     ['Siding','SD',8],
-    ['Windows','WD',5],
-    ['Decks','DK',8],
-    ['Railings','RL',4],
-    ['Masonry','MS',4]
+    ['Masonry','MS',8],
+    ['Roofing','RF',8],
+    ['Chimney','CM',2]
+    // ['Windows','WD',5],
+    // ['Railings','RL',4],
 ];
 
 for(var WLSI=0;WLSI<WL_Gallery_Setup.length;WLSI++){
@@ -38,31 +39,40 @@ const WL_queryString = window.location.search;
 const WL_GalParams = new URLSearchParams(WL_queryString);
 let WL_GalCode = WL_GalParams.get('gal');
 // console.log("QS Gal para:"+WL_GalParams.get('gal'));
+
 if(WL_GalCode){
     switch(WL_GalCode.toString()){        
+        case "DK":
+            console.log("Decks");        
+            generateTmbList(0)       
+        break;         
         case 'SD':
             console.log("Siding");  
             generateTmbList(1)
         break;                     
-        case "WD":
-            console.log("Windows");        
-            generateTmbList(2)                      
-        break;  
-        case "DK":
-            console.log("Decks");        
-            generateTmbList(3)       
-        break;         
-        case "RL":
-            console.log("Railings");        
-            generateTmbList(4)          
-        break;         
         case "MS":
             console.log("Masonry");        
-            generateTmbList(5)            
-        break;                                                                                
+            generateTmbList(2)            
+        break;               
+        case "RF":
+            console.log("Roofing");        
+            generateTmbList(3)            
+        break;               
+        case "CM":
+            console.log("Chimney");        
+            generateTmbList(4)            
+        break;     
+        // case "WD":
+        //     console.log("Windows");        
+        //     generateTmbList(2)                      
+        // break;  
+        // case "RL":
+        //     console.log("Railings");        
+        //     generateTmbList(4)          
+        // break;                                                                                                                                                                     
         default:
-            console.log("Roofing");
-            generateTmbList(0)
+            console.log("Decks");        
+            generateTmbList(0) 
         break;
     }
 }else{
@@ -110,7 +120,8 @@ function generateTmbList(index){
     //Generate and write new thumbnails...
     for(var WLGI=0;WLGI<imgNum;WLGI++){
         // console.log("Image #"+WLGI)
-        document.querySelector(".galleryImgContainer div").innerHTML += '<a title="'+imgTitle+' img #'+WLGI+'" href="#" class="WL_GAL_Tmb" data-TMB-name="'+imgLst+'" data-Tmb-num="'+WLGI+'"><img src="images/WL_IMGGAL_'+imgLst+'/thumbs/WLC_Gal_Tmb_'+WLGI+'.png" class="img-fluid d-block mx-auto" alt="WoodLocked Trust"></a>'; 
+        // document.querySelector(".galleryImgContainer div").innerHTML += '<a title="'+imgTitle+' img #'+WLGI+'" href="#" class="WL_GAL_Tmb" data-TMB-name="'+imgLst+'" data-Tmb-num="'+WLGI+'"><img src="images/WL_IMGGAL_'+imgLst+'/thumbs/WLC_Gal_Tmb_'+WLGI+'.png" class="img-fluid d-block mx-auto" alt="WoodLocked Trust"></a>'; 
+        document.querySelector(".galleryImgContainer div").innerHTML += '<a title="'+imgTitle+' img #'+WLGI+'" href="#" class="WL_GAL_Tmb" data-TMB-name="'+imgLst+'" data-Tmb-num="'+WLGI+'"><img src="images/WL_IMGGAL_'+imgLst+'/WLC_Gal_'+WLGI+'.png" class="img-fluid d-block mx-auto" loading="lazy" alt="WoodLocked Trust"></a>'; 
     }
     showGalImage();
 }

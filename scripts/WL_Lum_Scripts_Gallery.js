@@ -1,11 +1,11 @@
 //Gallery Javascript
 var WL_Gallery_Setup = [
-    ['Tables','TB',10],
-    ['Lighting','LGT',8],
-    ['Furniture','FUR',5],
-    ['Mantles','MNT',8],
-    ['Barn doors','BD',4],
-    ['Wholesale','WS',4]
+    ['Tables','TB',20],
+    ['Lighting','LGT',35],
+    ['Furniture','FUR',14],
+    ['Mantles','MNT',4],
+    ['Barn doors','BD',1],
+    ['Wholesale','WS',2]
 ];
 
 for(var WLSI=0;WLSI<WL_Gallery_Setup.length;WLSI++){
@@ -110,7 +110,8 @@ function generateTmbList(index){
     //Generate and write new thumbnails...
     for(var WLGI=0;WLGI<imgNum;WLGI++){
         // console.log("Image #"+WLGI)
-        document.querySelector(".galleryImgContainer div").innerHTML += '<a title="'+imgTitle+' img #'+WLGI+'" href="#" class="WL_GAL_Tmb" data-TMB-name="'+imgLst+'" data-Tmb-num="'+WLGI+'"><img src="images/WL_IMGGAL_'+imgLst+'/thumbs/WLC_Gal_Tmb_'+imgLst+'_'+WLGI+'.png" class="img-fluid d-block mx-auto" alt="WoodLocked Trust"></a>'; 
+        // document.querySelector(".galleryImgContainer div").innerHTML += '<a title="'+imgTitle+' img #'+WLGI+'" href="#" class="WL_GAL_Tmb" data-TMB-name="'+imgLst+'" data-Tmb-num="'+WLGI+'"><img src="images/WL_IMGGAL_'+imgLst+'/thumbs/WLC_Gal_Tmb_'+imgLst+'_'+WLGI+'.png" class="img-fluid d-block mx-auto" alt="WoodLocked Trust"></a>'; 
+        document.querySelector(".galleryImgContainer div").innerHTML += '<a title="'+imgTitle+' img #'+WLGI+'" href="#" class="WL_GAL_Tmb" data-TMB-name="'+imgLst+'" data-Tmb-num="'+WLGI+'"><img src="images/WL_IMGGAL_'+imgLst+'/WLC_Gal_'+WLGI+'.png" class="img-fluid d-block mx-auto" loading="lazy" alt="WoodLocked Trust"></a>'; 
     }
     showGalImage();
 }
