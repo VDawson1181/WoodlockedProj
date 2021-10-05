@@ -3,10 +3,10 @@ var WL_Gallery_Setup = [
     ['Decks','DK',12],
     ['Siding','SD',8],
     ['Masonry','MS',8],
+    ['Railings','RL',4],
     ['Roofing','RF',8],
     ['Chimney','CM',2]
     // ['Windows','WD',5],
-    // ['Railings','RL',4],
 ];
 
 for(var WLSI=0;WLSI<WL_Gallery_Setup.length;WLSI++){
@@ -53,23 +53,24 @@ if(WL_GalCode){
         case "MS":
             console.log("Masonry");        
             generateTmbList(2)            
-        break;               
+        break;          
+        case "RL":
+            console.log("Railings");        
+            generateTmbList(3)          
+        break;      
         case "RF":
             console.log("Roofing");        
-            generateTmbList(3)            
+            generateTmbList(4)            
         break;               
         case "CM":
             console.log("Chimney");        
-            generateTmbList(4)            
+            generateTmbList(5)            
         break;     
         // case "WD":
         //     console.log("Windows");        
         //     generateTmbList(2)                      
         // break;  
-        // case "RL":
-        //     console.log("Railings");        
-        //     generateTmbList(4)          
-        // break;                                                                                                                                                                     
+                                                                                                                                                                    
         default:
             console.log("Decks");        
             generateTmbList(0) 

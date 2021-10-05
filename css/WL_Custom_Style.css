@@ -49,13 +49,14 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-call p {
+  font-family: 'Brygada 1918', serif;
   color: #b86936;
   text-transform: capitalize;
   font-size: 1em;
   line-height: .75em;
   letter-spacing: 0.1em;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 0px;
 }
 
@@ -63,7 +64,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.2em;
   line-height: .75em;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.1em;
   margin-bottom: 0px;
 }
@@ -143,10 +144,10 @@ body {
   .carousel-item p {
     /* CSS goes here */
     width: 100%;
-    font-size: 2em;
-    line-height: 1em;
-    padding: 10px 15px;
-    top: 275px;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    padding: 10px 5px;
+    top: 330px;
     text-align: center;
   }
 }
@@ -204,11 +205,11 @@ body {
 }
 
 .WL_Construction .carousel-item:nth-of-type(3) {
-  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_2.png) no-repeat center center;
+  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_2_SM.png) no-repeat center center;
 }
 
 .WL_Construction .carousel-item:nth-of-type(4) {
-  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_3.png) no-repeat center center;
+  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_3_SM.png) no-repeat center center;
 }
 
 .WL_Construction .carousel-item:nth-of-type(5) {
@@ -216,18 +217,14 @@ body {
 }
 
 .WL_Construction .carousel-item:nth-of-type(6) {
-  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_5.png) no-repeat center center;
-}
-
-.WL_Construction .carousel-item:nth-of-type(7) {
   background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_6.png) no-repeat center center;
 }
 
-.WL_Construction .carousel-item:nth-of-type(8) {
+.WL_Construction .carousel-item:nth-of-type(7) {
   background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_7.png) no-repeat center center;
 }
 
-.WL_Construction .carousel-item:nth-of-type(9) {
+.WL_Construction .carousel-item:nth-of-type(8) {
   background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_8.png) no-repeat center center;
 }
 
@@ -308,13 +305,13 @@ body {
 @media (max-width: 767px) {
   /* CSS goes here */
   #WL_Philosophy_Hdr p {
-    font-size: 1.7rem;
+    font-size: 2.1rem;
     line-height: 2rem;
     margin: 20px 0 0;
   }
   #WL_Philosophy_Hdr span.text-feature {
-    font-size: 2.2rem;
-    line-height: 2.7rem;
+    font-size: 2.5rem;
+    line-height: 2rem;
     display: block;
   }
   #WL_Philosophy_Hdr .container:nth-of-type(2) {
@@ -468,8 +465,8 @@ body {
 @media (max-width: 767px) {
   .bdy_Ftr p {
     max-width: 300px;
-    margin: 10px auto;
-    font-size: 1.4em;
+    margin: 5px auto;
+    font-size: 1.1em;
     line-height: 1.4em;
     padding: 10px;
   }
@@ -479,12 +476,12 @@ body {
   }
   .bdy_Ftr p span.text-feature:nth-of-type(1) {
     top: 0px;
-    left: 20px;
+    left: -15px;
     font-size: 2.5em;
   }
   .bdy_Ftr p span.text-feature:nth-of-type(2) {
-    top: 112px;
-    right: 48px;
+    top: 60px;
+    right: 5px;
     font-size: 2.5em;
   }
   .bdy_Ftr h6 {
@@ -531,8 +528,16 @@ body {
   }
   #WL_AboutUs_Bdy .WL_Hdr_Main {
     padding: 5px 0px 0px;
-    font-size: 1.6em;
-    line-height: 2.1rem;
+    font-size: 1.2em;
+    line-height: 1.5rem;
+  }
+  #WL_AboutUs_Bdy .bdy_Hdr .WL_Hdr_SubMain {
+    font-size: 1.1em;
+    line-height: 1.5rem;
+    padding: 0px;
+  }
+  #WL_AboutUs_Bdy .bdy_Hdr img {
+    width: 15%;
   }
 }
 
@@ -559,7 +564,7 @@ body {
 
 #WL_Product_Bdy a {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   color: #b86937;
   font-size: 1.1em;
   line-height: 1.1em;
@@ -754,30 +759,32 @@ body {
 }
 
 #galleryModalWindow .gal-close p {
-  width: 75px;
+  width: 50px;
+  height: 50px;
   background-color: #b86936;
   color: white;
   border: 1px solid white;
-  border-top: 0px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -597px;
+  bottom: 0;
+  left: 640px;
   right: 0;
   margin: auto;
   text-align: center;
   color: #fff;
   padding: 5px;
-  border-radius: 0 0 10px 10px;
-  font-size: 15px;
-  line-height: 15px;
+  border-radius: 30px;
+  font-size: 35px;
+  line-height: 38px;
+  text-indent: 1px;
   font-weight: bold;
 }
 
 #galleryModalWindow .gal-close p:hover {
   background-color: black;
-  color: #b86936;
-  border: 2px solid #b86936;
-  border-top: 0px;
+  color: red;
+  border: 1px solid red;
+  text-indent: 1px;
 }
 
 .gal-Prev, .gal-Next {
@@ -843,6 +850,14 @@ body {
   }
   .gal-Next {
     right: -310px;
+  }
+  #galleryModalWindow .gal-close p {
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    line-height: 23px;
+    top: -220px;
+    left: 237px;
   }
 }
 
@@ -911,6 +926,11 @@ body {
   font-weight: 700;
   font-size: 1.2em;
   line-height: 1em;
+}
+
+#WL_Contact_Bdy .WL_Contact_Address h6 span {
+  font-size: 0.7em;
+  line-height: 0.7em;
 }
 
 #WL_Contact_Bdy .WL_Contact_Address h5 {
