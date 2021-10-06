@@ -50,7 +50,7 @@
 #sp_leftSide .bkgrndLayer:hover, #sp_rightSide .bkgrndLayer:hover{
     /* opacity: 0.5; */
     filter: grayscale(0%);
-    opacity: 0.24;
+    opacity: 0.35;
     transition: all 0.5s linear;
 }
 

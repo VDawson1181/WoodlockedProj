@@ -61,10 +61,10 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-call h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Brygada 1918', serif;
   font-size: 2.2em;
   line-height: .75em;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.1em;
   margin-bottom: 0px;
 }
@@ -134,10 +134,10 @@ body {
   font-family: 'Brygada 1918', serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 3.5em;
-  line-height: 1.25em;
+  font-size: 2.9em;
+  line-height: 1.05em;
   position: absolute;
-  top: calc(100vh - 550px);
+  top: calc(100vh - 300px);
 }
 
 @media (max-width: 767px) {
@@ -209,7 +209,7 @@ body {
 }
 
 .WL_Construction .carousel-item:nth-of-type(4) {
-  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_3_SM.png) no-repeat center center;
+  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_9_SM.png) no-repeat center center;
 }
 
 .WL_Construction .carousel-item:nth-of-type(5) {
@@ -270,6 +270,10 @@ body {
 }
 
 @media (max-width: 767px) {
+  .HP_Feature_Text {
+    font-size: 0.9em;
+    line-height: 1.2em;
+  }
   .WL_LumProd .WL_Prod_Categories .HP_Feature_Text {
     height: 90px;
   }
@@ -678,7 +682,7 @@ body {
 }
 
 .WL_Construction .galContainerInner .navListing:nth-of-type(6) .WL_FeatSubImg {
-  background: transparent url(../images/WL_IMGGAL__MenuLogos/WLC_Products_WindowsLogo.png) no-repeat center center;
+  background: transparent url(../images/WL_IMGGAL__MenuLogos/WLC_Products_Chimney.png) no-repeat center center;
   background-size: contain;
 }
 
@@ -917,7 +921,7 @@ body {
 }
 
 #WL_Contact_Bdy .WL_Contact_Address, .wl_ContactForm_Wrap {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Brygada 1918', serif;
   font-weight: 400;
   text-align: left;
 }
@@ -937,6 +941,30 @@ body {
   font-weight: 400;
   font-size: 1.2em;
   line-height: 1em;
+}
+
+#WL_Contact_Bdy .WL_Contact_Address h5 a {
+  color: white;
+}
+
+#WL_Contact_Bdy .WL_Contact_Address h5 a:hover {
+  color: #b86937;
+}
+
+#WL_Contact_Bdy .WL_Contact_Address p {
+  width: 250px;
+  border: 2px solid #b86937;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1em;
+  font-weight: 700;
+  padding: 5px 0px;
+  margin-left: -5px;
+}
+
+#WL_Contact_Bdy .WL_Contact_Address img {
+  width: 220px;
+  display: block;
 }
 
 .wl_Pg_Spacer {
@@ -985,5 +1013,11 @@ input[type=text], select, textarea {
 #WL_Contact_Ftr {
   display: block;
   min-height: 100px;
+}
+
+@media (max-width: 767px) {
+  #WL_Contact_Bdy .WL_Contact_Address img {
+    width: 160px;
+  }
 }
 /*# sourceMappingURL=WL_Custom_Style.css.map */

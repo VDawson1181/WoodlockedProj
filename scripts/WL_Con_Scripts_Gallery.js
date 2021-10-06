@@ -5,7 +5,7 @@ var WL_Gallery_Setup = [
     ['Masonry','MS',8],
     ['Railings','RL',4],
     ['Roofing','RF',8],
-    ['Chimney','CM',2]
+    ['Chimneys','CM',2]
     // ['Windows','WD',5],
 ];
 
@@ -63,7 +63,7 @@ if(WL_GalCode){
             generateTmbList(4)            
         break;               
         case "CM":
-            console.log("Chimney");        
+            console.log("Chimneys");        
             generateTmbList(5)            
         break;     
         // case "WD":
