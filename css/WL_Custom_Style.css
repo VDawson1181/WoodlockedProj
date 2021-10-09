@@ -147,8 +147,9 @@ body {
     font-size: 1.2em;
     line-height: 1.2em;
     padding: 10px 5px;
-    top: 330px;
+    top: 510px;
     text-align: center;
+    margin: 0;
   }
 }
 
@@ -959,12 +960,16 @@ body {
   line-height: 1em;
   font-weight: 700;
   padding: 5px 0px;
-  margin-left: -5px;
+  margin: 0px 0px 7px -5px;
 }
 
 #WL_Contact_Bdy .WL_Contact_Address img {
-  width: 220px;
+  width: 200px;
   display: block;
+}
+
+#WL_Contact_Bdy .WL_Contact_Address img.WL_Fin_Logo {
+  width: 240px;
 }
 
 .wl_Pg_Spacer {

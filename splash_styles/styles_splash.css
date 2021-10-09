@@ -104,11 +104,12 @@
     }
     #sp_leftSide,#sp_rightSide,#sp_leftSide .bkgrndLayer,#sp_rightSide .bkgrndLayer{
         width: 100vw;
-        height: 51vh;
+        height: 50vh;
     }
-    /* #sp_rightSide h6,#sp_leftSide h6{
-        width: 75%;
-    } */
+    #sp_rightSide h6,#sp_leftSide h6{
+        /* width: 75%; */
+        top: -40px;
+    }
     #sp_leftSide h6 {
         background: transparent url(../splash_images/WLC_Splash_lumberLogo_Mob.png) center center no-repeat;
       }
