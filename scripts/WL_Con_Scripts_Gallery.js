@@ -5,7 +5,7 @@ var WL_Gallery_Setup = [
     ['Masonry','MS',8],
     ['Railings','RL',4],
     ['Roofing','RF',8],
-    ['Chimneys','CM',2]
+    ['Chimneys','CM',3]
     // ['Windows','WD',5],
 ];
 
