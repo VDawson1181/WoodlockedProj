@@ -123,6 +123,7 @@ body {
   }
   .carousel-inner {
     width: 100%;
+    top: 90px;
   }
 }
 
@@ -147,7 +148,7 @@ body {
     font-size: 1.2em;
     line-height: 1.2em;
     padding: 10px 5px;
-    top: 475px;
+    top: 405px;
     text-align: center;
     margin: 0;
   }
@@ -197,12 +198,49 @@ body {
   background: transparent url(../images/WL_Lumber_Carousel/WLC_Lum_HP_Carousel_10.png) no-repeat top center;
 }
 
+@media (max-width: 767px) {
+  /* Mobile CSS goes here */
+  .WL_Lumber .carousel-item:nth-of-type(1) {
+    background: transparent url(../images/WL_Lumber_Carousel/Mob/WLC_Lum_HP_Carousel_0.png) no-repeat top center;
+  }
+  .WL_Lumber .carousel-item:nth-of-type(2) {
+    background: transparent url(../images/WL_Lumber_Carousel/Mob/WLC_Lum_HP_Carousel_1.png) no-repeat top center;
+  }
+  .WL_Lumber .carousel-item:nth-of-type(3) {
+    background: transparent url(../images/WL_Lumber_Carousel/Mob/WLC_Lum_HP_Carousel_2.png) no-repeat top center;
+  }
+  .WL_Lumber .carousel-item:nth-of-type(4) {
+    background: transparent url(../images/WL_Lumber_Carousel/Mob/WLC_Lum_HP_Carousel_3.png) no-repeat top center;
+  }
+  .WL_Lumber .carousel-item:nth-of-type(5) {
+    background: transparent url(../images/WL_Lumber_Carousel/Mob/WLC_Lum_HP_Carousel_4.png) no-repeat top center;
+  }
+  .WL_Lumber .carousel-item:nth-of-type(6) {
+    background: transparent url(../images/WL_Lumber_Carousel/Mob/WLC_Lum_HP_Carousel_5.png) no-repeat top center;
+  }
+  .WL_Lumber .carousel-item:nth-of-type(7) {
+    background: transparent url(../images/WL_Lumber_Carousel/Mob/WLC_Lum_HP_Carousel_6.png) no-repeat top center;
+  }
+  .WL_Lumber .carousel-item:nth-of-type(8) {
+    background: transparent url(../images/WL_Lumber_Carousel/Mob/WLC_Lum_HP_Carousel_7.png) no-repeat top center;
+  }
+  .WL_Lumber .carousel-item:nth-of-type(9) {
+    background: transparent url(../images/WL_Lumber_Carousel/Mob/WLC_Lum_HP_Carousel_8.png) no-repeat top center;
+  }
+  .WL_Lumber .carousel-item:nth-of-type(10) {
+    background: transparent url(../images/WL_Lumber_Carousel/Mob/WLC_Lum_HP_Carousel_9.png) no-repeat top center;
+  }
+  .WL_Lumber .carousel-item:nth-of-type(11) {
+    background: transparent url(../images/WL_Lumber_Carousel/Mob/WLC_Lum_HP_Carousel_10.png) no-repeat top center;
+  }
+}
+
 .WL_Construction .carousel-item:nth-of-type(1) {
-  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_0.png) no-repeat center center;
+  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_0_SM.png) no-repeat center center;
 }
 
 .WL_Construction .carousel-item:nth-of-type(2) {
-  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_1.png) no-repeat center center;
+  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_1_SM.png) no-repeat center center;
 }
 
 .WL_Construction .carousel-item:nth-of-type(3) {
@@ -214,19 +252,47 @@ body {
 }
 
 .WL_Construction .carousel-item:nth-of-type(5) {
-  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_4.png) no-repeat center center;
+  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_4_SM.png) no-repeat center center;
 }
 
 .WL_Construction .carousel-item:nth-of-type(6) {
-  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_6.png) no-repeat center center;
+  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_6_SM.png) no-repeat center center;
 }
 
 .WL_Construction .carousel-item:nth-of-type(7) {
-  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_7.png) no-repeat center center;
+  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_7_SM.png) no-repeat center center;
 }
 
 .WL_Construction .carousel-item:nth-of-type(8) {
-  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_8.png) no-repeat center center;
+  background: transparent url(../images/WL_Construction_Carousel/WLC_Con_HP_Carousel_8_SM.png) no-repeat center center;
+}
+
+@media (max-width: 767px) {
+  /* Mobile CSS goes here */
+  .WL_Construction .carousel-item:nth-of-type(1) {
+    background: transparent url(../images/WL_Construction_Carousel/Mob/WLC_Con_HP_Carousel_0_SM.png) no-repeat top center;
+  }
+  .WL_Construction .carousel-item:nth-of-type(2) {
+    background: transparent url(../images/WL_Construction_Carousel/Mob/WLC_Con_HP_Carousel_1_SM.png) no-repeat top center;
+  }
+  .WL_Construction .carousel-item:nth-of-type(3) {
+    background: transparent url(../images/WL_Construction_Carousel/Mob/WLC_Con_HP_Carousel_2_SM.png) no-repeat top center;
+  }
+  .WL_Construction .carousel-item:nth-of-type(4) {
+    background: transparent url(../images/WL_Construction_Carousel/Mob/WLC_Con_HP_Carousel_9_SM.png) no-repeat top center;
+  }
+  .WL_Construction .carousel-item:nth-of-type(5) {
+    background: transparent url(../images/WL_Construction_Carousel/Mob/WLC_Con_HP_Carousel_4_SM.png) no-repeat top center;
+  }
+  .WL_Construction .carousel-item:nth-of-type(6) {
+    background: transparent url(../images/WL_Construction_Carousel/Mob/WLC_Con_HP_Carousel_6_SM.png) no-repeat top center;
+  }
+  .WL_Construction .carousel-item:nth-of-type(7) {
+    background: transparent url(../images/WL_Construction_Carousel/Mob/WLC_Con_HP_Carousel_7_SM.png) no-repeat top center;
+  }
+  .WL_Construction .carousel-item:nth-of-type(8) {
+    background: transparent url(../images/WL_Construction_Carousel/Mob/WLC_Con_HP_Carousel_8_SM.png) no-repeat top center;
+  }
 }
 
 .carousel-indicators .active {
@@ -396,10 +462,24 @@ body {
   line-height: 1.7em;
 }
 
+.HP_Phil_Text .FSTExt {
+  display: inline-block;
+}
+
+.HP_Phil_Text .MobTExt {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .HP_Phil_Text {
     font-size: 1em;
     line-height: 1.5em;
+  }
+  .HP_Phil_Text .FSTExt {
+    display: none;
+  }
+  .HP_Phil_Text .MobTExt {
+    display: block;
   }
 }
 

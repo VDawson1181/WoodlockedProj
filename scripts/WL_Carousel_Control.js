@@ -11,7 +11,7 @@ if (WL_mediaQuery.matches) {
 }else{
     console.log('Mobile!')
     WL_Bkgrnd_Size = '300%';
-    WL_Bkgrnd_Final = '260%';
+    WL_Bkgrnd_Final = '220%';
 }
 
     gsap.set('.carousel-item',{backgroundSize:WL_Bkgrnd_Size})
