@@ -202,7 +202,7 @@ body{
         background: transparent url(../images/WL_Lumber_Carousel/Mob/WLC_Lum_HP_Carousel_1.png) no-repeat top center;
     }
     .WL_Lumber .carousel-item:nth-of-type(3){
-        background: transparent url(../images/WL_Lumber_Carousel/Mob/WLC_Lum_HP_Carousel_2.png) no-repeat top center;
+        background: transparent url(../images/WL_Lumber_Carousel/Mob/WLC_Lum_HP_Carousel_2.png) no-repeat -300px center;
     }
     .WL_Lumber .carousel-item:nth-of-type(4){
         background: transparent url(../images/WL_Lumber_Carousel/Mob/WLC_Lum_HP_Carousel_3.png) no-repeat top center;
@@ -321,7 +321,7 @@ body{
 }
 
 .WL_LumProd .WL_Prod_Categories .HP_Feature_Text{
-    height: 90px;
+    min-height: 100px;
 }
 
 .WL_ConProd .WL_Prod_Categories .HP_Feature_Text{
@@ -339,7 +339,7 @@ body{
         line-height: 1.2em;
     }
     .WL_LumProd .WL_Prod_Categories .HP_Feature_Text{
-        height: 90px;
+        min-height: 150px;
     }
 
     .WL_ConProd .WL_Prod_Categories .HP_Feature_Text{
@@ -632,6 +632,7 @@ body{
 .WL_Prod_Categories{
     gap: 40px;
     padding-bottom: 20px;
+    flex-wrap: wrap;
 }
 #WL_Product_Bdy .WL_FeatSubImg{
     margin-top: 20px;
@@ -1099,10 +1100,14 @@ body{
     // width: 375px;
     text-align: left;
 }
-#WL_Contact_Bdy .WL_Contact_Address h6{
+#WL_Contact_Bdy .WL_Contact_Address h6{    
     font-weight: 700;
     font-size: 1.2em;
     line-height: 1em;
+}
+#WL_Contact_Bdy .WL_Contact_Address h6:nth-of-type(3){
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 #WL_Contact_Bdy .WL_Contact_Address h6 span{

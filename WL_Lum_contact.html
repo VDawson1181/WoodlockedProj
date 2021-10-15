@@ -1,3 +1,27 @@
+<!-- <?php 
+    // https://stackoverflow.com/questions/18379238/send-email-with-php-from-html-form-on-submit-with-the-same-script
+    if(isset($_POST['submit'])){
+        $to = "info@woodlockedcorp.com"; // this is your Email address
+        $from = $_POST['wl_email']; // this is the sender's Email address
+        $first_name = $_POST['wl_fname'];
+        $last_name = $_POST['wl_lname'];
+        $service_type = $_POST['WL_ProductLst'];
+        $subject = "WoodLocked Lumber inquiry submission";
+        $subject2 = "Copy of your form submission";
+        $message = $first_name . " " . $last_name . " is inquiring about:" . $service_type . "Services... \n\n" . $_POST['wl_message'];
+        $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['wl_message'];
+        $headers ="MIME-VERSION: 1.0"."\r\n";
+        $headers .="Content-type:text/html;charset=UTF-8"."\r\n";
+        $headers = "From:" . $from;
+        $headers2 = "From:" . $to;
+
+        mail($to,$subject,$message,$headers);
+        mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+        echo "Message Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    }
+?> -->
+                         
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,7 +82,8 @@
                         
                     </div>
                     <div class="wl_ContactForm_Wrap col-md">
-                        <form action="/scripts/WL_Con_MailHandler.php" method="get">
+                        <!-- <form action="/scripts/WL_Lum_MailHandler.php" method="get"> -->
+                        <!-- <form action="/scripts/WL_Lum_MailHandler.php" method="post">
                             <label for="WL_ProductLst">Products:</label>
                             <select id="WL_ProductLst" name="WL_ProductLst" required>
                               <option value="">--- Choose A Product ---</option>
@@ -78,7 +103,30 @@
                             <label for="wl_message">Message:</label><br>
                             <textarea id="wl_message" name="wl_message" required></textarea><br><br>
                             <input type="submit" class="wl_submit" name="wl_submit" value="Submit">
-                          </form> 
+                        </form>  -->
+                        <form target="_blank" action="https://formsubmit.co/info@woodlockedcorp.com" method="POST">
+                            <div class="form-group">
+                              <label for="WL_ProductLst">Products:</label>
+                              <select id="WL_ProductLst" name="WL_ProductLst" class="form-control" required>
+                                <option value="">--- Choose A Product ---</option>
+                                <option value="Tables">Tables</option>
+                                <option value="Lighting">Lighting</option>
+                                <option value="Furniture">Furniture</option>
+                                <option value="Mantles">Mantles</option>
+                                <option value="BarnDoors">Barn Doors</option>
+                                <option value="Wholesale">Wholesale</option>
+                              </select> <br>
+                              <label for="wl_fname">First Name:</label><br>
+                              <input type="text" id="wl_fname" name="name" class="form-control" required><br>
+                              <label for="wl_lname">Last Name:</label><br>
+                              <input type="text" id="wl_fname" name="name" class="form-control" required><br>
+                              <label for="wl_email">Email:</label><br>
+                              <input type="email" id="wl_email" name="email" class="form-control" required><br>
+                              <label for="wl_message">Message:</label><br>
+                              <textarea placeholder="Your Message" id="wl_message" class="form-control" name="message" rows="10" required></textarea><br><br>                              
+                            </div>   
+                            <button type="submit" class="wl_submit">Submit</button> 
+                          </form>
                         <!-- <p class="HP_Feature_Text d-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum id provident corrupti ut labore numquam nemo nisi ducimus. Dolorem facilis numquam expedita quas facere quod eos placeat ipsa dicta minima?</p> -->
                     </div>                   
                 </div>

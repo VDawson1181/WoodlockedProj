@@ -1,7 +1,7 @@
 <?php 
 if(isset($_POST['submit'])){
     // https://stackoverflow.com/questions/18379238/send-email-with-php-from-html-form-on-submit-with-the-same-script
-    $to = "vdawson647@gmail.com"; // this is your Email address
+    $to = "info@woodlockedcorp.com"; // this is your Email address
     $from = $_POST['wl_email']; // this is the sender's Email address
     $first_name = $_POST['wl_fname'];
     $last_name = $_POST['wl_lname'];
