@@ -1,5 +1,11 @@
+:root {
+  --wl-color-lgtBrwn: rgba(184, 105, 54, 1);
+  --wl-color-blk: rgba(0, 0, 0, 1);
+  --wl-color-wht: rgba(255, 255, 255, 1);
+}
+
 body {
-  background-color: black;
+  background-color: var(--wl-color-blk);
 }
 
 /* Nav Styles */
@@ -16,25 +22,25 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-  color: #b86936;
+  color: var(--wl-color-lgtBrwn);
   -webkit-filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.7));
           filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.7));
 }
 
 .navbar-brand {
-  background: black;
+  background: var(--wl-color-blk);
   /*padding: 10px; */
   padding: 10px 20px 10px 100px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: white;
+  color: var(--wl-color-wht);
   text-transform: uppercase;
   position: relative;
 }
 
 .navbar-dark .navbar-nav .nav-item {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   position: relative;
   top: 4px;
@@ -44,27 +50,27 @@ body {
   position: relative;
   top: 0px;
   text-align: center;
-  color: white;
+  color: var(--wl-color-wht);
   /* padding-left: 30px; */
 }
 
 .navbar-dark .navbar-nav .nav-call p {
-  font-family: 'Brygada 1918', serif;
-  color: #b86936;
+  font-family: "Brygada 1918", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--wl-color-lgtBrwn);
   text-transform: capitalize;
   font-size: 1em;
   line-height: .75em;
   letter-spacing: 0.1em;
-  font-style: italic;
-  font-weight: 400;
   margin-bottom: 0px;
 }
 
 .navbar-dark .navbar-nav .nav-call h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 2.2em;
   line-height: .75em;
-  font-weight: 400;
   letter-spacing: 0.1em;
   margin-bottom: 0px;
 }
@@ -89,8 +95,8 @@ body {
 @media (max-width: 767px) {
   /* CSS goes here */
   #WL_navbarContainer {
-    background-color: black;
-    border-bottom: 2px solid #b86936;
+    background-color: var(--wl-color-blk);
+    border-bottom: 2px solid var(--wl-color-lgtBrwn);
   }
   .navbar {
     padding: 0rem 1rem;
@@ -129,10 +135,10 @@ body {
 
 .carousel-item p {
   background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
+  color: var(--wl-color-wht);
   display: inline-block;
   padding: 10px 40px;
-  font-family: 'Brygada 1918', serif;
+  font-family: "Brygada 1918", serif;
   font-weight: 400;
   font-style: italic;
   font-size: 2.9em;
@@ -296,26 +302,26 @@ body {
 }
 
 .carousel-indicators .active {
-  background-color: #b86936;
+  background-color: var(--wl-color-lgtBrwn);
 }
 
 /* Carousel Styles */
 .WL_BlackBox {
   margin: 175px 100px 0px;
-  background-color: black;
+  background-color: var(--wl-color-blk);
   border-radius: 25px 25px 0px 0px;
 }
 
 @media (max-width: 767px) {
   /* CSS goes here */
   .WL_BlackBox {
-    margin: 135px 20px 0px;
+    margin: 115px 5px 0px;
     background-color: rgba(0, 0, 0, 0.9);
   }
 }
 
 .HP_Feature_Text {
-  font-family: 'Brygada 1918', serif;
+  font-family: "Brygada 1918", serif;
   font-weight: 400;
   font-size: 1em;
   line-height: 1.5em;
@@ -342,11 +348,11 @@ body {
     line-height: 1.2em;
   }
   .WL_LumProd .WL_Prod_Categories .HP_Feature_Text {
-    min-height: 150px;
+    min-height: 80px;
   }
   .WL_ConProd .WL_Prod_Categories .HP_Feature_Text {
-    width: 300px;
-    height: 120px;
+    width: 285px;
+    height: 90px;
     margin: 0 auto;
   }
   .WL_ConProd .wl-fx-img {
@@ -356,18 +362,18 @@ body {
 
 /* Philosophy Hdr Styles */
 #WL_Philosophy_Hdr p {
-  background-color: black;
-  font-family: 'Brygada 1918', serif;
+  background-color: var(--wl-color-blk);
+  font-family: "Brygada 1918", serif;
+  font-weight: 400;
   font-style: italic;
   text-transform: uppercase;
   font-size: 3rem;
   line-height: 3rem;
-  font-weight: 400;
   padding-bottom: 15px;
 }
 
 #WL_Philosophy_Hdr span.text-feature {
-  color: #b86936;
+  color: var(--wl-color-lgtBrwn);
   font-size: 3.5rem;
   line-height: 1.7rem;
   font-weight: 700;
@@ -396,13 +402,13 @@ body {
 /* Philosophy Hdr Styles */
 /* Philosophy Bdy Styles */
 #WL_Philosophy_Bdy {
-  background-color: black;
+  background-color: var(--wl-color-blk);
 }
 
 .WL_Hdr_Main {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  color: #b86936;
+  color: var(--wl-color-lgtBrwn);
   text-transform: uppercase;
 }
 
@@ -421,9 +427,9 @@ body {
 }
 
 .WL_Hdr_SubMain {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #b86937;
+  color: var(--wl-color-lgtBrwn);
   padding: 20px 0px 10px;
   text-transform: uppercase;
   font-size: 2em;
@@ -436,9 +442,9 @@ body {
 }
 
 .HP_Feature_SubText {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color: #fff;
+  color: var(--wl-color-wht);
   font-size: 1.5em;
   line-height: 1.75rem;
 }
@@ -456,7 +462,7 @@ body {
 }
 
 .HP_Phil_Text {
-  font-family: 'Brygada 1918', serif;
+  font-family: "Brygada 1918", serif;
   font-weight: 400;
   font-size: 1.35em;
   line-height: 1.7em;
@@ -486,7 +492,7 @@ body {
 /* Philosophy Bdy Styles */
 /* Philosophy Ftr Styles */
 #WL_Philosophy_Ftr {
-  background-color: black;
+  background-color: var(--wl-color-blk);
 }
 
 .bdy_Ftr {
@@ -497,7 +503,7 @@ body {
   max-width: 950px;
   min-width: 320px;
   margin: 0 auto;
-  font-family: 'Brygada 1918', serif;
+  font-family: "Brygada 1918", serif;
   font-weight: 600;
   font-style: italic;
   font-size: 2.5em;
@@ -510,7 +516,7 @@ body {
   height: 37px;
   background: transparent url(../images/WLC_HP_Quotation.png) no-repeat center center;
   background-size: contain;
-  color: #b86936;
+  color: var(--wl-color-lgtBrwn);
   font-weight: 700;
   font-style: italic;
   font-size: 3em;
@@ -532,15 +538,16 @@ body {
 }
 
 .bdy_Ftr h6 {
-  font-family: 'Great Vibes', cursive;
-  color: #b86936;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  color: var(--wl-color-lgtBrwn);
   font-size: 3.35em;
   line-height: 0.75em;
   padding-top: 30px;
 }
 
 .bdy_Ftr h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   color: #ca916d;
   font-size: 1em;
@@ -578,13 +585,16 @@ body {
     font-size: 0.75rem;
     line-height: 1.25rem;
   }
+  .bdy_Ftr {
+    padding: 15px 0 25px;
+  }
 }
 
 /* Philosophy Ftr Styles */
 /* Footer Nav Styles */
 #WL_ftr_navbarContainer {
   width: 100%;
-  background-color: black;
+  background-color: var(--wl-color-blk);
   -webkit-box-shadow: 0px -1px 15px 5px rgba(184, 105, 54, 0.23);
           box-shadow: 0px -1px 15px 5px rgba(184, 105, 54, 0.23);
 }
@@ -650,16 +660,16 @@ body {
 }
 
 #WL_Product_Bdy a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #b86937;
+  color: var(--wl-color-lgtBrwn);
   font-size: 1.1em;
   line-height: 1.1em;
   margin-bottom: 0.25rem;
 }
 
 #WL_Product_Bdy a:hover {
-  color: #fff;
+  color: var(--wl-color-wht);
 }
 
 @media (max-width: 767px) {
@@ -668,7 +678,7 @@ body {
     padding-top: 25px;
   }
   #WL_Product_Bdy .WL_FeatSubImg {
-    margin-top: 10px;
+    margin-top: 50px;
   }
   #WL_Product_Bdy .WL_FeatSubImg,
   #WL_Product_Bdy .WL_FeatSubImg img {
@@ -776,14 +786,14 @@ body {
 }
 
 .galContainerInner .WL_Hdr_Main:hover {
-  color: white;
+  color: var(--wl-color-wht);
   text-decoration: underline;
 }
 
 .gal-sep {
   width: 1px;
   height: 30px;
-  background-color: #fff;
+  background-color: var(--wl-color-wht);
   position: absolute;
   bottom: 14px;
   right: -8px;
@@ -810,7 +820,7 @@ body {
 }
 
 .galleryImgContainer a {
-  border: 3px solid #fff;
+  border: 3px solid var(--wl-color-wht);
 }
 
 .galleryImgContainer img {
@@ -842,15 +852,15 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  border: 5px solid #fff;
+  border: 5px solid var(--wl-color-wht);
 }
 
 #galleryModalWindow .gal-close p {
   width: 50px;
   height: 50px;
-  background-color: #b86936;
-  color: white;
-  border: 1px solid white;
+  background-color: var(--wl-color-lgtBrwn);
+  color: var(--wl-color-wht);
+  border: 1px solid var(--wl-color-wht);
   position: absolute;
   top: -597px;
   bottom: 0;
@@ -858,7 +868,7 @@ body {
   right: 0;
   margin: auto;
   text-align: center;
-  color: #fff;
+  color: var(--wl-color-wht);
   padding: 5px;
   border-radius: 30px;
   font-size: 35px;
@@ -868,7 +878,7 @@ body {
 }
 
 #galleryModalWindow .gal-close p:hover {
-  background-color: black;
+  background-color: var(--wl-color-blk);
   color: red;
   border: 1px solid red;
   text-indent: 1px;
@@ -923,7 +933,7 @@ body {
     width: 240px;
   }
   .galleryImgContainer a {
-    border: 1px solid #fff;
+    border: 1px solid var(--wl-color-wht);
   }
   .galleryImgContainer img {
     width: 120px;
@@ -964,7 +974,7 @@ body {
 }
 
 #WL_Contact_Bdy .HP_Feature_Text {
-  font-family: 'Brygada 1918', serif;
+  font-family: "Brygada 1918", serif;
   font-weight: 400;
   font-size: 1.15em;
   line-height: 1.5em;
@@ -1004,7 +1014,7 @@ body {
 }
 
 #WL_Contact_Bdy .WL_Contact_Address, .wl_ContactForm_Wrap {
-  font-family: 'Brygada 1918', serif;
+  font-family: "Brygada 1918", serif;
   font-weight: 400;
   text-align: left;
 }
@@ -1016,7 +1026,7 @@ body {
 }
 
 #WL_Contact_Bdy .WL_Contact_Address h6:nth-of-type(3) {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
@@ -1032,16 +1042,16 @@ body {
 }
 
 #WL_Contact_Bdy .WL_Contact_Address h5 a {
-  color: white;
+  color: var(--wl-color-wht);
 }
 
 #WL_Contact_Bdy .WL_Contact_Address h5 a:hover {
-  color: #b86937;
+  color: var(--wl-color-lgtBrwn);
 }
 
 #WL_Contact_Bdy .WL_Contact_Address p {
   width: 250px;
-  border: 2px solid #b86937;
+  border: 2px solid var(--wl-color-lgtBrwn);
   text-align: center;
   font-size: 1.2em;
   line-height: 1em;
@@ -1065,13 +1075,14 @@ body {
 }
 
 .wl_ContactForm_Wrap .wl_submit {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   display: block;
   width: 175px;
   margin: 0 auto;
-  background-color: #b86936;
-  color: white;
-  border: 2px solid white;
+  background-color: var(--wl-color-lgtBrwn);
+  color: var(--wl-color-wht);
+  border: 2px solid var(--wl-color-wht);
   border-radius: 5px;
   font-size: 1.5em;
   text-transform: uppercase;
@@ -1084,9 +1095,9 @@ body {
 }
 
 .wl_ContactForm_Wrap .wl_submit:hover {
-  background-color: black;
-  color: #b86936;
-  border: 2px solid #b86936;
+  background-color: var(--wl-color-blk);
+  color: var(--wl-color-lgtBrwn);
+  border: 2px solid var(--wl-color-lgtBrwn);
 }
 
 .wl_ContactForm_Wrap #wl_message {
